@@ -8,7 +8,11 @@ var onDOMReady = function() {
 	var badletReasons = [
 		"Just no",
 		"Well done on inventing something all over again",
-		"Very good job!"];
+		"Very good job!",
+		"You would've used a database for this",
+		"This is feature complete, not that it would stop you adding features",
+		"What is was required and what you created have nothing in common",
+		"That's broken, at a fundemental level"];
 	document.getElementById('Explanation').innerHTML = badletReasons[Math.floor(Math.random()*badletReasons.length)];
 };
 document.addEventListener('DOMContentLoaded', onDOMReady);
