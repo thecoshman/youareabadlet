@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>You Are A Badlet</title>
+        <script type="text/javascript">
+var onDOMReady = function() {
+	var badletReasons = [
+		"Just no",
+		"Well done on inventing something all over again",
+		"Very good job!"];
+	document.getElementById('Explination').innerHTML = badletReasons[Math.floor(Math.random()*badletReasons.length)];
+};
+document.addEventListener('DOMContentLoaded', onDOMReady);
+        </script>
+        <style>
+div {
+    width: 1000px;
+    height: 100px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+h1 {
+	text-align: center;
+}
+		</style>
+	</head>
+	<body>
+		<div>
+			<h1 id="Explination"></h1>
+		</div>
+	</body>
+</html>
